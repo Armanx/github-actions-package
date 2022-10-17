@@ -13,7 +13,7 @@ jobs:
         with:
           node-version : 16
           registry-url: https://npm.pkg.github.com/
-          scope: '@armennag'
+          scope: '@Armanx'
       - run: npm install
       - run: npm publish
         env:
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/delete-package-versions@v3
       with:
-        owner: 'armennag'
+        owner: 'Armanx'
         repo: 'github-actions-package'
         package-name: '1.0.0-alpha'
         token: ${{ secrets.reposecret }}
